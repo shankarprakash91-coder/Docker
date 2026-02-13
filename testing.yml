@@ -2,9 +2,9 @@ trigger:
 - main
 
 pool: 
-  name: windows-gent-PAT
+  name: Default
   demands:
-- Agent.Name -equals windows-for-mac
+- Agent.Name -equals new-windows-agent
   jobs: 
 - job: job1
 steps:
