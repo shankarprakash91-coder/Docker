@@ -1,11 +1,12 @@
-trigger: 
+trigger:
 - main
 
-pool: 
+pool:
   name: Default
   demands:
-- Agent.Name -equals new-windows-agent
-  jobs: 
+  - Agent.Name -equals new-windows-agent
+
+jobs:
 - job: job1
-steps:
-- script: echo hi shankar
+  steps:
+  - script: echo hi shankar
