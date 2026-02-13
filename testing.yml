@@ -1,0 +1,11 @@
+trigger: 
+- main
+
+pool: 
+  name: windows-gent-PAT
+  demands:
+- Agent.Name -equals windows-for-mac
+  jobs: 
+- job: job1
+steps:
+- script: echo hi shankar
